@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import <ImageHandler.h>
 
 @implementation ViewController
 

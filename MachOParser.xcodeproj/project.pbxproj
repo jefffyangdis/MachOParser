@@ -12,7 +12,25 @@
 		C064EE0223CCA2CE00E397DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C064EE0123CCA2CE00E397DC /* Assets.xcassets */; };
 		C064EE0523CCA2CE00E397DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C064EE0323CCA2CE00E397DC /* Main.storyboard */; };
 		C064EE0823CCA2CE00E397DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C064EE0723CCA2CE00E397DC /* main.m */; };
+		C064EE3023CDAA7200E397DC /* libImageHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C064EE2C23CDAA4200E397DC /* libImageHandler.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C064EE2B23CDAA4200E397DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C064EE2723CDAA4200E397DC /* ImageHandler.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C064EE1B23CDAA1B00E397DC;
+			remoteInfo = ImageHandler;
+		};
+		C064EE2D23CDAA6B00E397DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C064EE2723CDAA4200E397DC /* ImageHandler.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C064EE1A23CDAA1B00E397DC;
+			remoteInfo = ImageHandler;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C064EDF823CCA2CA00E397DC /* MachOParser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MachOParser.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,6 +43,7 @@
 		C064EE0623CCA2CE00E397DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C064EE0723CCA2CE00E397DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C064EE0923CCA2CE00E397DC /* MachOParser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MachOParser.entitlements; sourceTree = "<group>"; };
+		C064EE2723CDAA4200E397DC /* ImageHandler.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ImageHandler.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C064EE3023CDAA7200E397DC /* libImageHandler.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +63,7 @@
 			children = (
 				C064EDFA23CCA2CA00E397DC /* MachOParser */,
 				C064EDF923CCA2CA00E397DC /* Products */,
+				C064EE2F23CDAA7200E397DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +91,22 @@
 			path = MachOParser;
 			sourceTree = "<group>";
 		};
+		C064EE2823CDAA4200E397DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C064EE2C23CDAA4200E397DC /* libImageHandler.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C064EE2F23CDAA7200E397DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C064EE2723CDAA4200E397DC /* ImageHandler.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -84,6 +121,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C064EE2E23CDAA6B00E397DC /* PBXTargetDependency */,
 			);
 			name = MachOParser;
 			productName = MachOParser;
@@ -114,12 +152,28 @@
 			mainGroup = C064EDEF23CCA2CA00E397DC;
 			productRefGroup = C064EDF923CCA2CA00E397DC /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C064EE2823CDAA4200E397DC /* Products */;
+					ProjectRef = C064EE2723CDAA4200E397DC /* ImageHandler.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C064EDF723CCA2CA00E397DC /* MachOParser */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C064EE2C23CDAA4200E397DC /* libImageHandler.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libImageHandler.a;
+			remoteRef = C064EE2B23CDAA4200E397DC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C064EDF623CCA2CA00E397DC /* Resources */ = {
@@ -145,6 +199,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C064EE2E23CDAA6B00E397DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ImageHandler;
+			targetProxy = C064EE2D23CDAA6B00E397DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C064EE0323CCA2CE00E397DC /* Main.storyboard */ = {
@@ -208,11 +270,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/ImageHander";
 			};
 			name = Debug;
 		};
@@ -260,10 +324,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/ImageHander";
 			};
 			name = Release;
 		};
@@ -274,6 +340,7 @@
 				CODE_SIGN_ENTITLEMENTS = MachOParser/MachOParser.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/ImageHandler";
 				INFOPLIST_FILE = MachOParser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -281,6 +348,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = macho.MachOParser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -291,6 +359,7 @@
 				CODE_SIGN_ENTITLEMENTS = MachOParser/MachOParser.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/ImageHandler";
 				INFOPLIST_FILE = MachOParser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,6 +367,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = macho.MachOParser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
