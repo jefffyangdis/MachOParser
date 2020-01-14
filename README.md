@@ -17,3 +17,4 @@
 
 
 cxr test
+lgx test
