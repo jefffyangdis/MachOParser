@@ -13,6 +13,7 @@
 		C064EE0523CCA2CE00E397DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C064EE0323CCA2CE00E397DC /* Main.storyboard */; };
 		C064EE0823CCA2CE00E397DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C064EE0723CCA2CE00E397DC /* main.m */; };
 		C064EE3023CDAA7200E397DC /* libImageHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C064EE2C23CDAA4200E397DC /* libImageHandler.a */; };
+		C064EE3323CDB61800E397DC /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C064EE3223CDB61800E397DC /* WindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		C064EE0723CCA2CE00E397DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C064EE0923CCA2CE00E397DC /* MachOParser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MachOParser.entitlements; sourceTree = "<group>"; };
 		C064EE2723CDAA4200E397DC /* ImageHandler.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ImageHandler.xcodeproj; sourceTree = "<group>"; };
+		C064EE3123CDB61800E397DC /* WindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
+		C064EE3223CDB61800E397DC /* WindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 		C064EDFA23CCA2CA00E397DC /* MachOParser */ = {
 			isa = PBXGroup;
 			children = (
+				C064EE3123CDB61800E397DC /* WindowController.h */,
+				C064EE3223CDB61800E397DC /* WindowController.m */,
 				C064EDFB23CCA2CA00E397DC /* AppDelegate.h */,
 				C064EDFC23CCA2CA00E397DC /* AppDelegate.m */,
 				C064EDFE23CCA2CA00E397DC /* ViewController.h */,
@@ -193,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C064EE0023CCA2CA00E397DC /* ViewController.m in Sources */,
+				C064EE3323CDB61800E397DC /* WindowController.m in Sources */,
 				C064EE0823CCA2CE00E397DC /* main.m in Sources */,
 				C064EDFD23CCA2CA00E397DC /* AppDelegate.m in Sources */,
 			);

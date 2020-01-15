@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		C064EE1F23CDAA1B00E397DC /* ImageHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = C064EE1E23CDAA1B00E397DC /* ImageHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C064EE2123CDAA1B00E397DC /* ImageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C064EE2023CDAA1B00E397DC /* ImageHandler.m */; };
+		C0CC89DB23CF06E900DDD853 /* MOMmapFile.h in Headers */ = {isa = PBXBuildFile; fileRef = C0CC89D923CF06E900DDD853 /* MOMmapFile.h */; };
+		C0CC89DC23CF06E900DDD853 /* MOMmapFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = C0CC89DA23CF06E900DDD853 /* MOMmapFile.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C064EE1B23CDAA1B00E397DC /* libImageHandler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libImageHandler.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C064EE1E23CDAA1B00E397DC /* ImageHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageHandler.h; sourceTree = "<group>"; };
 		C064EE2023CDAA1B00E397DC /* ImageHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageHandler.m; sourceTree = "<group>"; };
+		C0CC89D923CF06E900DDD853 /* MOMmapFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOMmapFile.h; sourceTree = "<group>"; };
+		C0CC89DA23CF06E900DDD853 /* MOMmapFile.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MOMmapFile.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 		C064EE1D23CDAA1B00E397DC /* ImageHandler */ = {
 			isa = PBXGroup;
 			children = (
+				C0CC89D923CF06E900DDD853 /* MOMmapFile.h */,
+				C0CC89DA23CF06E900DDD853 /* MOMmapFile.mm */,
 				C064EE1E23CDAA1B00E397DC /* ImageHandler.h */,
 				C064EE2023CDAA1B00E397DC /* ImageHandler.m */,
 			);
@@ -61,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C064EE1F23CDAA1B00E397DC /* ImageHandler.h in Headers */,
+				C0CC89DB23CF06E900DDD853 /* MOMmapFile.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +127,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0CC89DC23CF06E900DDD853 /* MOMmapFile.mm in Sources */,
 				C064EE2123CDAA1B00E397DC /* ImageHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
